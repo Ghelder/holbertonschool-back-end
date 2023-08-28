@@ -17,4 +17,4 @@ if __name__ == "__main__":
     val_task = [x for x in res if x.get("completed")]
     print(f"Employee {name} is done with tasks({len(val_task)}/{len(res)}):")
     for x in val_task:
-        print(f'\t{x.get("title")}')
+        print(f'\t {x.get("title")}')
