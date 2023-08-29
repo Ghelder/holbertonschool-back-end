@@ -7,7 +7,7 @@ from sys import argv
 if __name__ == "__main__":
     URL = "https://jsonplaceholder.typicode.com"
 
-    params = {"userId": int(argv[1])}
+    params = {"id": int(argv[1])}
     res_user = get(f"{URL}/users", params=params).json()
 
     params = {"userId": int(argv[1])}
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     tasks = []
 
     for x in res_user:
-        name = x.get("name")
+        name = x.get("username")
 
     for x in res:
         task = {
