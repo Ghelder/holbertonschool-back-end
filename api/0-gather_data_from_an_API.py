@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """using the API"""
-from sys import argv
 from requests import get
+from sys import argv
 
 if __name__ == "__main__":
     URL = "https://jsonplaceholder.typicode.com"
