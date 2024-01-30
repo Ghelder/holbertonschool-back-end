@@ -15,4 +15,4 @@ if __name__ == "__main__":
             name = users.get("username")
             completed = i.get("completed")
             title = i.get("title")
-            f.write(f'"{userId}", "{name}", "{completed}", "{title}"\n')
+            f.write(f'"{userId}","{name}","{completed}","{title}"\n')
